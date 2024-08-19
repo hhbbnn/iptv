@@ -19,6 +19,12 @@ permalink: /
 
 ---
 
+如不愿折腾，可以直接下载 直播电视app 使用，手机电视都兼容，没有任何广告，完全免费。
+
+直播电视app 下载地址：https://zbds.lanzoui.com/b0b2kul6b
+
+
+
 ## 📺 自动扫描直播源 IPTV6：
 
 部署在 GitHub 上的程序自动化扫描而来，每天早上 9:00 自动更新。*有ipv6环境的强烈推荐这个列表，高速稳定*
@@ -105,7 +111,6 @@ function copyToClipboard(text) {
   
   - Demo🔗 [https://zhuan.zhoujie218.top/z.php?url=https://live.zhoujie218.top/tv/iptv6.txt](https://zhuan.zhoujie218.top/z.php?url=https://live.zhoujie218.top/tv/iptv6.txt)
   
-    
 - 🌐 直播源转换工具：
   
   - [https://zhuan.zhoujie218.top](https://zhuan.zhoujie218.top/)
@@ -150,4 +155,5 @@ function copyToClipboard(text) {
 
 ## 欢迎请我喝杯饮料
 
-![请我喝杯饮料](https://cdn.jsdelivr.net/gh/vbskycn/tu@main/img/ds.jpg)
+![请我喝杯饮料](https://live.zhoujie218.top/img/wxds.jpg)
+
