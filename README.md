@@ -32,7 +32,7 @@ permalink: /
 
 ## 📺 自动扫描直播源 IPTV6：
 
-部署在服务器上的程序自动扫描而来，<!-- UPDATE_TIME_IPTV6 -->本次更新时间: 2024-12-13 16:18:20<!-- END_UPDATE_TIME_IPTV6 -->
+部署在服务器上的程序自动扫描而来，<!-- UPDATE_TIME_IPTV6 -->本次更新时间: 2025-01-08 12:27:42<!-- END_UPDATE_TIME_IPTV6 -->
 
 *有ipv6环境的强烈推荐这个列表，高速稳定*
 
@@ -60,21 +60,21 @@ permalink: /
     <td><button class="button" onclick="copyToClipboard('https://live.zbds.top/tv/iptv6.m3u')">快速复制</button></td>
   </tr>
 </table>
-*有地方的宽带运营商已经污染本站域名了，免费使用的都封... 如果你打开失败，请使用加速地址访问*
+*有地方的宽带运营商已经污染本站域名了，如果你打开失败，请使用加速地址访问*
 
 ```
-https://ghp.ci/raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv6.txt
+https://gh-proxy.com/raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv6.txt
 ```
 
 ```
-https://ghp.ci/raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv6.m3u
+https://gh-proxy.com/raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv6.m3u
 ```
 
 
 
 ## 📺 自动扫描直播源 IPTV4：
 
-部署在服务器上的程序自动扫描而来，<!-- UPDATE_TIME_IPTV4 -->本次更新时间: 2024-12-13 16:18:20<!-- END_UPDATE_TIME_IPTV4 -->
+部署在服务器上的程序自动扫描而来，<!-- UPDATE_TIME_IPTV4 -->本次更新时间: 2025-01-08 12:27:42<!-- END_UPDATE_TIME_IPTV4 -->
 
 <table>
   <colgroup>
@@ -101,11 +101,11 @@ https://ghp.ci/raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv6
 *有地方的宽带运营商已经污染本站域名了，免费使用的都封... 如果你打开失败，请使用加速地址访问*
 
 ```
-https://ghp.ci/raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv4.txt
+https://gh-proxy.com/raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv4.txt
 ```
 
 ```
-https://ghp.ci/raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv4.m3u
+https://gh-proxy.com/raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv4.m3u
 ```
 
 
@@ -128,6 +128,14 @@ https://ghp.ci/raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv4
 
   
 
+## 增加台标：
+
+- https://live.zbds.top/logo/频道名.png
+
+  示例： [https://live.zbds.top/logo/CCTV1.png](https://live.zbds.top/logo/CCTV1.png)
+
+
+
 ## 如果你不愿意折腾，这里有折腾好的直播点播软件
 
 下载链接： [https://www.zbds.top](https://zbds.top/aztv)  （包含港澳台）
@@ -144,12 +152,13 @@ https://ghp.ci/raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv4
 - 您可以 Fork 本项目，但引用本项目内容到其他仓库的情况，务必要遵守开源协议。
 - 本项目不保证直播频道的有效性，直播内容可能受直播服务提供商因素影响而失效。
 - 所有文件均托管在 [GitHub](https://github.com/vbskycn/iptv) 且自动构建，由项目发起人公益维护，欢迎 Star 本项目或点击 [Issues](https://github.com/vbskycn/iptv/issues/new/choose) 反馈您的问题。
-- 本项目部分文件基于[fanmingming](https://github.com/fanmingming/live)大佬的项目。
+- 本项目关于台标的文件基于[fanmingming](https://github.com/fanmingming/live)大佬的项目和网络收集而来。
 
 
 
 ## 📔 更新
 
+- 2025.1.7 增加台标
 - 2024.12.13 跟着节奏继续优化
 - 2024.10.18 优化测试有效源代码
 - 2024.9.9 直播源失效速度太快，新添加deibian服务器，每日三次更新
