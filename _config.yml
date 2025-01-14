@@ -1,14 +1,35 @@
-title: 最新iptv直播源播放列表
-description: GitHub自动程序生成的最新可用的iptv直播源播放列表
-show_downloads: false
+title: 最新IPTV直播源|每日更新|免费电视直播源|Github开源项目
+description: 最新免费开源的IPTV电视直播源,支持IPv4/IPv6双栈访问,每6小时自动更新,永久免费。收录国内、海外、港澳台等上千个iptv电视直播频道。
+keywords: IPTV,直播源,直播电视,电视直播,CCTV,卫视,IPv6直播源,免费直播源,m3u8直播源,港澳台,海外,国内,直播电视app,live.zbds.top
+author: vbskycn
+language: zh-CN
+timezone: Asia/Shanghai
+
+# 现有配置保持不变...
 url: https://live.zbds.top
 google_analytics: # 如果有 Google Analytics 代码，请添加到这里
 theme: jekyll-theme-cayman
 #remote_theme: pages-themes/cayman@v0.2.0
 encoding: "utf-8"
 
+# 添加 Google AdSense 配置
+google_adsense: ca-pub-6941806026814791
+
 collections:
   pages:
     output: true
     permalink: /:path/
+
+# 修改网站图标配置，使用现有的图标
+favicon: favicon.ico
+apple_touch_icon: favicon.ico
+
+# 添加社交媒体图标
+social:
+  github: vbskycn/iptv
+  telegram: starkluistn98
+
+# 添加自定义样式
+sass:
+  style: compressed
 
