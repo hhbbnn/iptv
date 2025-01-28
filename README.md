@@ -1,12 +1,12 @@
 ---
 layout: default
 title: 最新IPTV直播源|每日更新|免费电视直播源|Github开源项目
-description: 最新免费开源的IPTV电视直播源，支持IPv4/IPv6双栈访问，每6小时自动更新，永久免费。收录国内、海外、港澳台等上千个iptv电视直播频道。
+description: 最新免费开源的IPTV电视直播源，支持IPv4/IPv6双栈访问，每6小时自动更新，永久免费。收录国内、海外、港澳台等上千个iptv电视直播源频道。
 keywords: IPTV,直播源,直播电视,电视直播,CCTV,全套卫视,全套央视,IPv6直播源,免费直播源,m3u8直播源,港澳台,海外,国内,直播电视app,live.zbds.top
 permalink: /
 ---
 
-<h1 align="center">✯ 这是一个国内可直连的iptv直播电视源分享项目 ✯</h1>
+<h1 align="center">✯ 这是一个国内可直连的iptv直播源分享项目 ✯</h1>
 
 ### 🔄永久免费 直连访问 完整开源 不含广告 直播源支持IPv4/IPv6双栈访问🔄
 
@@ -24,7 +24,7 @@ permalink: /
 
 > 如不愿折腾，可以直接下载 直播电视app 使用，手机电视都兼容，没有任何广告，完全免费。
 >
-> 直播电视app 下载地址：[https://www.zbds.top](https://zbds.top/aztv)  （包含港澳台频道）
+> 直播电视app 下载地址：[https://zbds.top](https://zbds.top/aztv)  （包含港澳台频道）
 >
 > 软件内包含本仓库所有直播源，还有很多其他直播源，并且每日更新。
 
@@ -34,11 +34,11 @@ permalink: /
 
 ### 📡 自动扫描直播源 IPTV6
 
-部署在服务器上的程序自动扫描而来，<!-- UPDATE_TIME_IPTV6 -->本次更新时间: 2025-01-14 22:58:15<!-- END_UPDATE_TIME_IPTV6 -->
+部署在服务器上的程序自动扫描而来，<!-- UPDATE_TIME_IPTV6 -->本次更新时间: 2025-01-28 12:33:14<!-- END_UPDATE_TIME_IPTV6 -->
 
 *有ipv6环境的强烈推荐这个列表，高速稳定*
 
-目前运营商大力推广ipv6，没有的朋友可以拨打你的运营商免费开通（注意，有的地方开通了就没有公网ipv4，只能二选一，真坑）
+**近期由于不可力抗原因，大部分ipv6源都关门了，大玩家各玩各的。造成网友们不能一网通吃，请大家静待花开吧！！如有开门的大玩家，本仓库第一时间更新上来给大家分享**
 
 <table>
   <colgroup>
@@ -77,7 +77,7 @@ https://gh-proxy.com/raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv
 
 ### 📡 自动扫描直播源 IPTV4
 
-部署在服务器上的程序自动扫描而来，<!-- UPDATE_TIME_IPTV4 -->本次更新时间: 2025-01-14 22:58:15<!-- END_UPDATE_TIME_IPTV4 -->
+部署在服务器上的程序自动扫描而来，<!-- UPDATE_TIME_IPTV4 -->本次更新时间: 2025-01-28 12:33:14<!-- END_UPDATE_TIME_IPTV4 -->
 
 <table>
   <colgroup>
@@ -101,8 +101,7 @@ https://gh-proxy.com/raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv
     <td><button class="button" onclick="copyToClipboard('https://live.zbds.top/tv/iptv4.m3u')">快速复制</button></td>
   </tr>
 </table>
-
-*有地方的宽带运营商已经污染本站域名了，免费使用的都封... 如果你打开失败，请使用加速地址访问*
+*有地方的宽带运营商已经污染本站域名了，如果你打开失败，请使用加速地址访问*
 
 ```
 https://gh-proxy.com/raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv4.txt
@@ -151,13 +150,15 @@ https://gh-proxy.com/raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv
 ### 📱 直播电视
 如果你不愿意折腾，这里有折腾好的可直接使用的直播电视软件
 
-- 稳定版
+稳定版
 
-下载链接： [https://www.zbds.top](https://zbds.top/aztv)  （包含港澳台）
+- 下载链接： [https://zbds.top](https://zbds.top/aztv)  （包含港澳台）
 
-- 特别版
 
-如果显示链接失败，请下载[特别版](https://zbds.lanzoui.com/b0b2kul6b)试试（2024.10.27）
+优化版
+
+- 如果显示链接失败，请下载[优化版](https://zbds.lanzoui.com/b0b2kul6b)试试（2024.10.27）
+
 
 
 

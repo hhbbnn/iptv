@@ -3,6 +3,9 @@ import subprocess
 import requests
 import datetime
 import re
+import time
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 # 获取脚本所在目录
 script_path = os.path.dirname(os.path.abspath(__file__))
@@ -20,6 +23,38 @@ def run_command(command, cwd=None):
 def print_current_time(message):
     current_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     print(f"{message} {current_time}")
+
+def download_file_with_retry(url, filename, max_retries=3, backoff_factor=1):
+    """
+    下载文件的函数，包含重试机制
+    
+    Args:
+        url: 下载地址
+        filename: 保存的文件名
+        max_retries: 最大重试次数
+        backoff_factor: 重试延迟因子
+    """
+    session = requests.Session()
+    retry_strategy = Retry(
+        total=max_retries,
+        backoff_factor=backoff_factor,
+        status_forcelist=[500, 502, 503, 504],
+    )
+    adapter = HTTPAdapter(max_retries=retry_strategy)
+    session.mount("http://", adapter)
+    session.mount("https://", adapter)
+    
+    for attempt in range(max_retries + 1):
+        try:
+            response = session.get(url, timeout=30)
+            response.raise_for_status()
+            return response
+        except requests.exceptions.RequestException as e:
+            if attempt == max_retries:
+                raise e
+            print(f"下载 {filename} 失败，正在重试 ({attempt + 1}/{max_retries})...")
+            time.sleep(backoff_factor * (2 ** attempt))  # 指数退避
+    return None
 
 # 1. 获取脚本所在路径和系统时间日期
 print(f"脚本所在路径：{script_path}")
@@ -51,28 +86,44 @@ files_to_download = [
         "url": "https://mycode.zhoujie218.top/me/jxdx_hd.m3u",
         "filename": "jxdx_hd.m3u"
     },
-    # 在这里添加更多的文件下载信息
-    # 例如：
-    # {
-    #     "url": "https://example.com/another_file.txt",
-    #     "filename": "another_file.txt"
-    # },
+    {
+        "url": "https://mycode.zhoujie218.top/me/jxyd.txt",
+        "filename": "jxyd.txt"
+    },
+    {
+        "url": "https://mycode.zhoujie218.top/me/jxyd.m3u",
+        "filename": "jxyd.m3u"
+    }
 ]
 
 for file_info in files_to_download:
     url = file_info["url"]
     filename = file_info["filename"]
     file_path = os.path.join(script_path, filename)
-
+    
     print(f"正在下载 {filename} 文件...")
-    response = requests.get(url)
-    if response.status_code == 200:
-        with open(file_path, 'w', encoding='utf-8') as f:
-            f.write(response.text)
-        print(f"成功下载并保存 {filename} 到 {file_path}")
-    else:
-        print(f"下载失败 {filename}, 状态码: {response.status_code}")
-        exit(1)
+    try:
+        response = download_file_with_retry(url, filename)
+        if response and response.status_code == 200:
+            with open(file_path, 'w', encoding='utf-8') as f:
+                f.write(response.text)
+            print(f"成功下载并保存 {filename} 到 {file_path}")
+        else:
+            print(f"下载失败 {filename}, 状态码: {response.status_code if response else 'N/A'}")
+            if os.path.exists(file_path):
+                print(f"使用本地已存在的 {filename} 文件继续执行")
+                continue
+            else:
+                print(f"本地不存在 {filename} 文件，退出执行")
+                exit(1)
+    except Exception as e:
+        print(f"下载 {filename} 时发生错误: {str(e)}")
+        if os.path.exists(file_path):
+            print(f"使用本地已存在的 {filename} 文件继续执行")
+            continue
+        else:
+            print(f"本地不存在 {filename} 文件，退出执行")
+            exit(1)
 
 # 6. 同步文件
 print("正在同步文件...")
@@ -87,9 +138,11 @@ print("正在合并文件...")
 output_file = os.path.join(script_path, 'hd.txt')
 
 # 定义文件合并顺序
-merge_order = ['iptv6.txt', 'iptv4.txt']
+merge_order = ['jxyd.txt', 'jxdx_hd.txt', 'iptv6.txt', 'iptv4.txt']
 
 replacements = {
+    'jxdx_hd.txt': 'jdx,#genre#',
+    'jxyd.txt': 'jyd,#genre#',
     'iptv6.txt': 'ip6,#genre#',
     'iptv4.txt': 'ip4,#genre#'
 }
@@ -143,6 +196,19 @@ try:
 
 except Exception as e:
     print(f"更新 README.md 文件时出错: {str(e)}")
+    exit(1)
+
+# 8.5 执行 update_index.py
+print("正在执行 update_index.py...")
+try:
+    update_index_path = os.path.join(script_path, 'update_index.py')
+    if os.path.exists(update_index_path):
+        run_command(f'python3 {update_index_path}')
+        print("update_index.py 执行完成")
+    else:
+        print("警告：update_index.py 文件不存在")
+except Exception as e:
+    print(f"执行 update_index.py 时出错: {str(e)}")
     exit(1)
 
 # 9. 提交更改并推送到 GitHub
