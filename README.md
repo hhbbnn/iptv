@@ -34,7 +34,7 @@ permalink: /
 
 ### 📡 自动扫描直播源 IPTV6
 
-部署在服务器上的程序自动扫描而来，<!-- UPDATE_TIME_IPTV6 -->本次更新时间: 2025-02-09 06:37:29<!-- END_UPDATE_TIME_IPTV6 -->
+部署在服务器上的程序自动扫描而来，<!-- UPDATE_TIME_IPTV6 -->本次更新时间: 2025-02-11 12:11:44<!-- END_UPDATE_TIME_IPTV6 -->
 
 *有ipv6环境的强烈推荐这个列表，高速稳定*
 
@@ -77,7 +77,7 @@ https://gh-proxy.com/raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv
 
 ### 📡 自动扫描直播源 IPTV4
 
-部署在服务器上的程序自动扫描而来，<!-- UPDATE_TIME_IPTV4 -->本次更新时间: 2025-02-09 06:37:29<!-- END_UPDATE_TIME_IPTV4 -->
+部署在服务器上的程序自动扫描而来，<!-- UPDATE_TIME_IPTV4 -->本次更新时间: 2025-02-11 12:11:44<!-- END_UPDATE_TIME_IPTV4 -->
 
 <table>
   <colgroup>
@@ -131,7 +131,7 @@ https://gh-proxy.com/raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv
 
 **支持diyp、百川、Xml、直接写下面的url即可**
 
-- [https://epg.zbds.top](https://epg.zbds.top)
+- 服务器抗不住了，计划关闭！之前用了的请改别的epg吧！
 
   （如果可以请使用112114或51zmt的。因112114很多地方不能访问，所以新增镜像站，请轻量使用）
 
