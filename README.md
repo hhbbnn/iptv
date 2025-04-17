@@ -1,12 +1,12 @@
 ---
 layout: default
 title: 最新IPTV直播源|每日更新|免费电视直播源|Github开源项目
-description: 最新免费开源的IPTV电视直播源，支持IPv4/IPv6双栈访问，每6小时自动更新，永久免费。收录国内、海外、港澳台等上千个iptv电视直播源频道。
-keywords: IPTV,直播源,直播电视,电视直播,CCTV,全套卫视,全套央视,IPv6直播源,免费直播源,m3u8直播源,港澳台,海外,国内,直播电视app,live.zbds.top
+description: 最新免费开源的IPTV电视直播源,支持IPv4/IPv6双栈访问,每6小时自动更新。收录国内外数千个高清直播频道,包括央视、卫视、港澳台、海外频道。完全免费无广告,提供M3U/TXT格式,支持EPG节目单及台标,可用于电视盒子、手机、电脑等设备。
+keywords: IPTV,直播源,直播电视,电视直播,CCTV,全套卫视,全套央视,IPv6直播源,免费直播源,m3u8直播源,港澳台,海外,国内,直播电视app,live.izbds.com,live.izbds.top
 permalink: /
 ---
 
-<h1 align="center">✯ 这是一个国内可直连的iptv直播源分享项目 ✯</h1>
+<h2 align="center">✯ 这是一个国内可直连的iptv直播源分享项目 ✯</h2>
 
 ### 🔄永久免费 直连访问 完整开源 不含广告 直播源支持IPv4/IPv6双栈访问🔄
 
@@ -24,17 +24,55 @@ permalink: /
 
 > 如不愿折腾，可以直接下载 直播电视app 使用，手机电视都兼容，没有任何广告，完全免费。
 >
-> 直播电视app 下载地址：[https://zbds.top](https://zbds.top/aztv)  （包含港澳台频道）
+> 直播电视app 下载地址：[https://izbds.com](https://izbds.com/aztv)  （包含港澳台频道），推荐[野草助手](https://www.yecao.net/download/)安装码：0024
 >
 > 软件内包含本仓库所有直播源，还有很多其他直播源，并且每日更新。
 
 ------
 
 
+### 📡 自动扫描直播源 IPTV4
+
+部署在服务器上的程序自动扫描而来，<!-- UPDATE_TIME_IPTV4 -->本次更新时间: 2025-04-17 19:16:19<!-- END_UPDATE_TIME_IPTV4 -->
+
+<table>
+  <colgroup>
+    <col style="width: 20%;">
+    <col style="width: 60%;">
+    <col style="width: 20%;">
+  </colgroup>
+  <tr>
+    <th>名称</th>
+    <th>网址</th>
+    <th>快速复制</th>
+  </tr>
+  <tr>
+    <td>TXT 格式直播源</td>
+    <td><a href="https://live.izbds.com/tv/iptv4.txt">https://live.izbds.com/tv/iptv4.txt</a></td>
+    <td><button class="button" onclick="copyToClipboard('https://live.izbds.com/tv/iptv4.txt')">快速复制</button></td>
+  </tr>
+  <tr>
+    <td>M3U 格式直播源（已带台标和EPG）</td>
+    <td><a href="https://live.izbds.com/tv/iptv4.m3u">https://live.izbds.com/tv/iptv4.m3u</a></td>
+    <td><button class="button" onclick="copyToClipboard('https://live.izbds.com/tv/iptv4.m3u')">快速复制</button></td>
+  </tr>
+</table>
+*有地方的宽带运营商已经污染本站域名了，如果你打开失败，请使用加速地址访问*
+
+```
+https://gh-proxy.com/raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv4.txt
+```
+
+```
+https://gh-proxy.com/raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv4.m3u
+```
+
+
+
 
 ### 📡 自动扫描直播源 IPTV6
 
-部署在服务器上的程序自动扫描而来，<!-- UPDATE_TIME_IPTV6 -->本次更新时间: 2025-02-23 06:33:32<!-- END_UPDATE_TIME_IPTV6 -->
+部署在服务器上的程序自动扫描而来，<!-- UPDATE_TIME_IPTV6 -->本次更新时间: 2025-04-17 19:16:19<!-- END_UPDATE_TIME_IPTV6 -->
 
 *有ipv6环境的强烈推荐这个列表，高速稳定*
 
@@ -53,13 +91,13 @@ permalink: /
   </tr>
   <tr>
     <td>TXT 格式直播源</td>
-    <td><a href="https://live.zbds.top/tv/iptv6.txt">https://live.zbds.top/tv/iptv6.txt</a></td>
-    <td><button class="button" onclick="copyToClipboard('https://live.zbds.top/tv/iptv6.txt')">快速复制</button></td>
+    <td><a href="https://live.izbds.com/tv/iptv6.txt">https://live.izbds.com/tv/iptv6.txt</a></td>
+    <td><button class="button" onclick="copyToClipboard('https://live.izbds.com/tv/iptv6.txt')">快速复制</button></td>
   </tr>
   <tr>
     <td>M3U 格式直播源（已带台标和EPG）</td>
-    <td><a href="https://live.zbds.top/tv/iptv6.m3u">https://live.zbds.top/tv/iptv6.m3u</a></td>
-    <td><button class="button" onclick="copyToClipboard('https://live.zbds.top/tv/iptv6.m3u')">快速复制</button></td>
+    <td><a href="https://live.izbds.com/tv/iptv6.m3u">https://live.izbds.com/tv/iptv6.m3u</a></td>
+    <td><button class="button" onclick="copyToClipboard('https://live.izbds.com/tv/iptv6.m3u')">快速复制</button></td>
   </tr>
 </table>
 
@@ -75,42 +113,6 @@ https://gh-proxy.com/raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv
 
 
 
-### 📡 自动扫描直播源 IPTV4
-
-部署在服务器上的程序自动扫描而来，<!-- UPDATE_TIME_IPTV4 -->本次更新时间: 2025-02-23 06:33:32<!-- END_UPDATE_TIME_IPTV4 -->
-
-<table>
-  <colgroup>
-    <col style="width: 20%;">
-    <col style="width: 60%;">
-    <col style="width: 20%;">
-  </colgroup>
-  <tr>
-    <th>名称</th>
-    <th>网址</th>
-    <th>快速复制</th>
-  </tr>
-  <tr>
-    <td>TXT 格式直播源</td>
-    <td><a href="https://live.zbds.top/tv/iptv4.txt">https://live.zbds.top/tv/iptv4.txt</a></td>
-    <td><button class="button" onclick="copyToClipboard('https://live.zbds.top/tv/iptv4.txt')">快速复制</button></td>
-  </tr>
-  <tr>
-    <td>M3U 格式直播源（已带台标和EPG）</td>
-    <td><a href="https://live.zbds.top/tv/iptv4.m3u">https://live.zbds.top/tv/iptv4.m3u</a></td>
-    <td><button class="button" onclick="copyToClipboard('https://live.zbds.top/tv/iptv4.m3u')">快速复制</button></td>
-  </tr>
-</table>
-*有地方的宽带运营商已经污染本站域名了，如果你打开失败，请使用加速地址访问*
-
-```
-https://gh-proxy.com/raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv4.txt
-```
-
-```
-https://gh-proxy.com/raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv4.m3u
-```
-
 
 
 ### 💽DEMO
@@ -123,7 +125,7 @@ https://gh-proxy.com/raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv
 
 纯前端直播源格式转换器（开源在本仓库tools目录）
 
-- [https://zbds.top/tools/index.html](https://zbds.top/tools/index.html)
+- [https://izbds.com/tools/index.html](https://izbds.com/tools/index.html)
 
 
 
@@ -131,17 +133,26 @@ https://gh-proxy.com/raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv
 
 **支持diyp、百川、Xml、直接写下面的url即可**
 
-- 服务器抗不住了，计划关闭！之前用了的请改别的epg吧！
+```
+xmltv 接口： https://epg.zbds.top/index.php
+DIYP&百川 接口： https://epg.zbds.top/index.php?ch=CCTV1
+超级直播 接口： https://epg.zbds.top/index.php?channel=CCTV1
 
-  （如果可以请使用112114或51zmt的。因112114很多地方不能访问，所以新增镜像站，请轻量使用）
 
-  
+https://epg.zbds.top/
+https://epg.zbds.top/t.xml
+https://epg.zbds.top/t.xml.gz
+```
+
+（如果可以请使用112114或51zmt的。因112114很多地方不能访问，所以新增镜像站，请轻量使用）
+
+
 
 ### 🎨 增加台标
 
-使用路径 https://live.zbds.top/logo/频道名.png
+使用路径 https://live.izbds.com/logo/频道名.png
 
-- 示例： [https://live.zbds.top/logo/CCTV1.png](https://live.zbds.top/logo/CCTV1.png)
+- 示例： [https://live.izbds.com/logo/CCTV1.png](https://live.izbds.com/logo/CCTV1.png)
 
 
 
@@ -152,12 +163,11 @@ https://gh-proxy.com/raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv
 
 稳定版
 
-- 下载链接： [https://zbds.top](https://zbds.top/aztv)  （包含港澳台）
-
+- 下载链接： [https://izbds.com](https://izbds.com/aztv)  （包含港澳台）
 
 优化版
 
-- 如果显示链接失败，请下载[优化版](https://zbds.top/soft/zbds_yhb.apk)试试（2025.2.5）
+- 如果显示链接失败，请下载[最新版](https://izbds.com/aztv)试试（2025.2.5）
 
 
 
@@ -175,6 +185,7 @@ https://gh-proxy.com/raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv
 
 ### 📅 更新
 
+- 2025.2.28 重新部署epg服务
 - 2025.1.11 优化页面
 - 2025.1.7 增加台标接口
 - 2024.12.13 跟着节奏继续优化
