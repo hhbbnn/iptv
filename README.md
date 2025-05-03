@@ -24,7 +24,7 @@ permalink: /
 
 > 如不愿折腾，可以直接下载 直播电视app 使用，手机电视都兼容，没有任何广告，完全免费。
 >
-> 直播电视app 下载地址：[https://izbds.com](https://izbds.com/aztv)  （包含港澳台频道），推荐[野草助手](https://www.yecao.net/download/)安装码：0024
+> 直播电视app 下载地址：[https://izbds.com](https://izbds.com/aztv/)  （包含港澳台频道），推荐[野草助手](https://www.yecao.net/download/)安装码：0024
 >
 > 软件内包含本仓库所有直播源，还有很多其他直播源，并且每日更新。
 
@@ -33,7 +33,7 @@ permalink: /
 
 ### 📡 自动扫描直播源 IPTV4
 
-部署在服务器上的程序自动扫描而来，<!-- UPDATE_TIME_IPTV4 -->本次更新时间: 2025-04-17 19:16:19<!-- END_UPDATE_TIME_IPTV4 -->
+部署在服务器上的程序自动扫描而来，<!-- UPDATE_TIME_IPTV4 -->本次更新时间: 2025-05-03 13:03:49<!-- END_UPDATE_TIME_IPTV4 -->
 
 <table>
   <colgroup>
@@ -72,7 +72,7 @@ https://gh-proxy.com/raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv
 
 ### 📡 自动扫描直播源 IPTV6
 
-部署在服务器上的程序自动扫描而来，<!-- UPDATE_TIME_IPTV6 -->本次更新时间: 2025-04-17 19:16:19<!-- END_UPDATE_TIME_IPTV6 -->
+部署在服务器上的程序自动扫描而来，<!-- UPDATE_TIME_IPTV6 -->本次更新时间: 2025-05-03 13:03:49<!-- END_UPDATE_TIME_IPTV6 -->
 
 *有ipv6环境的强烈推荐这个列表，高速稳定*
 
@@ -163,11 +163,11 @@ https://epg.zbds.top/t.xml.gz
 
 稳定版
 
-- 下载链接： [https://izbds.com](https://izbds.com/aztv)  （包含港澳台）
+- 下载链接： [https://izbds.com](https://izbds.com/aztv/)  （包含港澳台）
 
 优化版
 
-- 如果显示链接失败，请下载[最新版](https://izbds.com/aztv)试试（2025.2.5）
+- 如果显示链接失败，请下载[最新版](https://izbds.com/aztv)试试（2025.4.26）
 
 
 
