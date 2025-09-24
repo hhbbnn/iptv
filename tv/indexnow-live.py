@@ -13,18 +13,19 @@ import xml.etree.ElementTree as ET
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
-    filename='indexnow-live.log'
+    filename='indexnow-live.log',
+    encoding='utf-8'
 )
 
-class IndexNowSubmitter:
+class SitemapIndexNowSubmitter:
     def __init__(self):
         self.api_endpoint = "https://api.indexnow.org/IndexNow"
-        self.host = "live.zbds.org"
-        self.key = "948665a80a8f4d6fa01290240884de0b"
+        self.host = "zbds.org"
+        self.key = "be141f00dd424e93941269a48bba4af7"
         self.key_location = f"https://{self.host}/{self.key}.txt"
-        self.sitemap_url = "https://live.zbds.org/sitemap.xml"
+        self.sitemap_url = "https://zbds.org/sitemap.xml"
         self.max_retries = 3
-        self.retry_delay = 5  # 重试间隔秒数
+        self.retry_delay = 5
 
     def get_urls_from_sitemap(self):
         """从 sitemap.xml 获取所有 URL"""
@@ -38,11 +39,11 @@ class IndexNowSubmitter:
             root = ET.fromstring(response.content)
             
             # 定义命名空间
-            ns = {'ns0': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
+            ns = {'ns': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
             
             # 提取所有 URL
             urls = []
-            for url in root.findall('.//ns0:url/ns0:loc', ns):
+            for url in root.findall('.//ns:url/ns:loc', ns):
                 urls.append(url.text)
             
             logging.info(f"从 sitemap 中获取到 {len(urls)} 个 URL")
@@ -82,6 +83,7 @@ class IndexNowSubmitter:
             "key": self.key,
             "keyLocation": self.key_location,
             "urlList": url_list,
+            "batchId": datetime.now(UTC).strftime("%Y%m%d%H%M%S"),
             "lastModified": datetime.now(UTC).strftime("%Y-%m-%dT%H:%M:%SZ")
         }
 
@@ -91,7 +93,7 @@ class IndexNowSubmitter:
                     self.api_endpoint,
                     headers=headers,
                     json=payload,
-                    timeout=30  # 添加超时设置
+                    timeout=30
                 )
                 
                 logging.info(f"提交尝试 {attempt + 1}/{self.max_retries}")
@@ -99,8 +101,8 @@ class IndexNowSubmitter:
                 logging.info(f"响应内容: {response.text}")
                 
                 if response.status_code == 200:
-                    print("成功提交 URL 到 IndexNow!")
-                    logging.info("成功提交 URL 到 IndexNow")
+                    print(f"成功提交 {len(url_list)} 个 URL 到 IndexNow!")
+                    logging.info(f"成功提交 {len(url_list)} 个 URL 到 IndexNow")
                     return True
                 else:
                     print(f"提交失败，状态码: {response.status_code}")
@@ -121,7 +123,7 @@ class IndexNowSubmitter:
                 return False
 
 def main():
-    submitter = IndexNowSubmitter()
+    submitter = SitemapIndexNowSubmitter()
     submitter.submit_urls()
 
 if __name__ == "__main__":

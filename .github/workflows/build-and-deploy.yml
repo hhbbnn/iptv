@@ -3,8 +3,6 @@ name: Build and Deploy Jekyll Site
 on:
   push:
     branches: [ main, master ]
-  pull_request:
-    branches: [ main, master ]
   workflow_dispatch:
 
 jobs:
@@ -12,8 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pages: write
-      id-token: write
     
     steps:
     - name: Checkout repository
@@ -28,20 +24,19 @@ jobs:
         bundler-cache: true
 
     - name: Install Jekyll dependencies
-      run: |
-        bundle install
+      run: bundle install
 
     - name: Build Jekyll site
-      run: |
-        bundle exec jekyll build
+      run: bundle exec jekyll build
 
-    - name: Deploy to GitHub Pages
+    - name: Deploy to gh branch
       uses: peaceiris/actions-gh-pages@v3
       if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./_site
+        publish_branch: gh
         force_orphan: true
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'
-        commit_message: 'docs: 自动更新静态文件 [skip ci]' 
+        commit_message: 'docs: 自动更新静态文件 [skip ci]'
